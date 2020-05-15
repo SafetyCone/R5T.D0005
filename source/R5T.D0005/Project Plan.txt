@@ -1,4 +1,4 @@
-R5T.D0005 - An IProgramNameProvider service library.
+R5T.D0005 - A stringly-typed IProgramNameProvider service library.
 
 Goals
 
