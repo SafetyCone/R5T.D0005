@@ -11,7 +11,7 @@ namespace R5T.D0005.Default
         {
             var entryAssembly = Assembly.GetEntryAssembly();
 
-            var programName = entryAssembly.FullName;
+            var programName = entryAssembly.GetName().Name;
             return Task.FromResult(programName);
         }
     }
