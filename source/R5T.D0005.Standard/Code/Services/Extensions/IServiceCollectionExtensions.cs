@@ -16,7 +16,7 @@ namespace R5T.D0005.Standard
         /// </summary>
         public static IServiceCollection AddProgramNameProvider(this IServiceCollection services)
         {
-            services.AddDefaultProgramNameProvider();
+            services.AddEntryAssemblyBasedProgramNameProvider();
 
             return services;
         }
