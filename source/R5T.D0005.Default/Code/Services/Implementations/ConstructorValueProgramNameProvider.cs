@@ -1,15 +1,19 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
+
+using R5T.T0064;
 
 
 namespace R5T.D0005.Default
 {
-    public class ConstructorValueProgramNameProvider : IProgramNameProvider
+    [ServiceImplementationMarker]
+    public class ConstructorValueProgramNameProvider : IProgramNameProvider, IServiceImplementation
     {
         private string ProgramName { get; }
 
 
-        public ConstructorValueProgramNameProvider(string programName)
+        public ConstructorValueProgramNameProvider(
+            [NotServiceComponent] string programName)
         {
             this.ProgramName = programName;
         }

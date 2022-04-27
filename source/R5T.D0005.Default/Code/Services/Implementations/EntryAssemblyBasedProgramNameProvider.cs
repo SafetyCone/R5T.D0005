@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Reflection;
-using System.Threading.Tasks;
+using System.Threading.Tasks;using R5T.T0064;
 
 
 namespace R5T.D0005.Default
-{
-    public class EntryAssemblyBasedProgramNameProvider : IProgramNameProvider
+{[ServiceImplementationMarker]
+    public class EntryAssemblyBasedProgramNameProvider : IProgramNameProvider,IServiceImplementation
     {
         public Task<string> GetProgramNameAsync()
         {

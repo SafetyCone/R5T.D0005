@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
+using System;
+using System.Threading.Tasks;using R5T.T0064;
 
 
 namespace R5T.D0005.Default
-{
-    public class StaticValueProgramNameProvider : IProgramNameProvider
+{[ServiceImplementationMarker]
+    public class StaticValueProgramNameProvider : IProgramNameProvider,IServiceImplementation
     {
         /// <summary>
         /// Note: not thread-safe.
